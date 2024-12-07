@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1>Наши продукты</h1>
+<ul>
+    {% for product in products %}
+    <li>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

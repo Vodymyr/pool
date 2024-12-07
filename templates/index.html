@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poolins - Industrialized Pools</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+     <header class="site-header">
+        <div class="container">
+            <!-- Левая часть хедера -->
+            <nav class="header-left">
+                <ul>
+                    <li><a href="/products/">Продукты</a>
+                        <!-- Выпадающее меню -->
+                        <ul class="dropdown">
+                            <li><a href="/products/product1/">Продукт 1</a></li>
+                            <li><a href="/products/product2/">Продукт 2</a></li>
+                            <li><a href="/products/product3/">Продукт 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/success-stories/">История успеха</a></li>
+                    <li><a href="/about/">О нас</a></li>
+                </ul>
+            </nav>
+
+            <!-- Логотип -->
+            <div class="header-logo">
+                <a href="/"><img src="{% static 'images/logo.png' %}" alt="Poolins Logo"></a>
+            </div>
+
+            <!-- Правая часть хедера -->
+            <nav class="header-right">
+                <ul>
+                    <li><a href="/downloads/">Загрузки</a></li>
+                    <li><a href="/contact/">Контакты</a></li>
+                    <li>
+                        <a href="#">Язык</a>
+                        <!-- Выпадающее меню для языков -->
+                        <ul class="dropdown">
+                            <li><a href="?lang=ru">Русский</a></li>
+                            <li><a href="?lang=en">English</a></li>
+                            <li><a href="?lang=es">Español</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="slider-arrow slider-arrow-left">&larr;</div>
+        <div class="slide" style="background-image: url('{% static "images/slide1.jpg" %}');">
+            <div class="slide-content">
+                <h2>cultura de Agua</h2>
+                <p>En Poolins nos diferenciamos </p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('{% static "images/slide2.jpg" %}');">
+            <div class="slide-content">
+                <h2>Заголовок 1</h2>
+                <p>Описание слайда 1</p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('{% static "images/slide3.jpg" %}');">
+            <div class="slide-content">
+                <h2>Заголовок 1</h2>
+                <p>Описание слайда 1</p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('{% static "images/slide4.jpg" %}');">
+            <div class="slide-content">
+                <h2>Заголовок 1</h2>
+                <p>Описание слайда 1</p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('{% static "images/slide5.jpg" %}');">
+            <div class="slide-content">
+                <h2>Заголовок 1</h2>
+                <p>Описание слайда 1</p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('{% static "images/slide6.jpg" %}');">
+            <div class="slide-content">
+                <h2>Заголовок 1</h2>
+                <p>Описание слайда 1</p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('{% static "images/slide7.jpg" %}');">
+            <div class="slide-content">
+                <h2>Заголовок 1</h2>
+                <p>Описание слайда 1</p>
+                <a href="/details/" class="btn">
+                    <span class="arrow">&larr;</span> Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="slider-arrow slider-arrow-right">&rarr;</div>
+    </section>
+</body>
+</html>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="icons">
+            <div>
+                <img src="{% static 'images/icon1.png' %}" alt="Feature">
+                <p>Instalación rápida</p>
+            </div>
+            <div>
+                <img src="{% static 'images/icon2.png' %}" alt="Feature">
+                <p>100% reciclable</p>
+            </div>
+        </div>
+    </section>
+

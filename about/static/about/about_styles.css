@@ -1,0 +1,25 @@
+/* Страница "О нас" */
+.about-page {
+    padding: 2em;
+    text-align: center;
+}
+
+.about-page h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.about-page p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-page img {
+    margin-top: 1.5em;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

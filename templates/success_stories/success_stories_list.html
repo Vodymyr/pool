@@ -1,0 +1,24 @@
+{% extends "base.html" 
+
+{% load static %}
+
+{% block content %}
+<h1>История успеха</h1>
+    <div class="success-slider">
+    <img src="{% static 'success_stories/project1.jpg' %}" alt="Проект 1">
+    <img src="{% static 'success_stories/project2.jpg' %}" alt="Проект 2" style="opacity: 0;">
+    <img src="{% static 'success_stories/project3.jpg' %}" alt="Проект 3" style="opacity: 0;">
+    </div>
+
+<ul>
+    {% for story in stories %}
+    <li>
+        <a href="{% url 'success_stories:detail' story.id %}">
+            <h2>{{ story.title }}</h2>
+        </a>
+        <img src="{{ story.image.url }}" alt="{{ story.title }}">
+        <p>{{ story.description|truncatechars:100 }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poolins</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/scripts.js' %}" defer></script>
+</head>
+<body>
+    <header style="background-image: url('{% static "images/logo-poolins.png" %}');">
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Главная</a></li>
+                <li><a href="{% url 'about:about' %}">О нас</a></li>
+                <li><a class="menu-item"><a href="#">История успеха</a></li>
+                    <a href="#" class="dropdown-toggle">Продукты</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Продукт 1</a></li>
+                        <li><a href="#">Продукт 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <img src="{% static 'images/logo-poolins.png' %}" alt="Логотип Poolins">
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© Poolins 2024</p>
+    </footer>
+</body>
+</html>
